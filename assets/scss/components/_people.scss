@@ -1,0 +1,20 @@
+.people {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  &__img {
+    height: 100%;
+    margin-right: 1.5rem;
+    font-weight: 700;
+    
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+}
+
+
