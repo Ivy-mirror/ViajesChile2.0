@@ -10,15 +10,16 @@
 
 
 @import
+"layout/form",
+"layout/header";
+
+
+@import
 'components/card',
 'components/carousel',
 'components/navbar',
 'components/people';
 
-
-@import
-"layout/form",
-"layout/header";
 
 @import
 'themes/background';

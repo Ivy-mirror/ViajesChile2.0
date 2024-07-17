@@ -1,4 +1,10 @@
 .navbar {
   color: white;
-  text-align: zz;
+
+  &__img {
+    height:2rem;
+    width:2rem;
+    border: rounded;    
+  }
 }
+  

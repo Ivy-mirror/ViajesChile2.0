@@ -11972,67 +11972,129 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
-.bona-nova-sc-regular {
-  font-family: "Bona Nova SC", serif;
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.bona-nova-sc-bold {
-  font-family: "Bona Nova SC", serif;
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.bona-nova-sc-regular-italic {
-  font-family: "Bona Nova SC", serif;
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-.card-body {
-  background-color: rgb(81, 209, 246);
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.header {
+  background-color: black;
   color: white;
+}
+
+.card-body {
+  background-color: white;
+  color: black;
 }
 
 .carousel-item {
   height: 500px;
 }
-
-.carousel-item img {
+.carousel-item__img {
   background-size: contain;
   height: 100%;
+  border: rounded;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-height: 500px) {
   .carousel-item {
     height: 300px;
   }
 }
 .navbar {
   color: white;
-  text-align: zz;
+}
+.navbar__img {
+  height: 2rem;
+  width: 2rem;
+  border: rounded;
 }
 
 .people {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   height: 100%;
   width: 100%;
 }
 .people__img {
-  height: 100%;
-  margin-right: 1.5rem;
-  font-weight: 700;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.people__title {
-  font-weight: 700;
-}
-
-.header {
-  background-color: black;
-  color: white;
+.people__text {
+  color: bisque;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .bg-costume {
