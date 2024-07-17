@@ -17,11 +17,32 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="bg-costume">
+        <!-- Modal -->
+        <div class="modal fade" id="CondicionesModal" tabindex="-1" aria-labelledby="ConddicionesModalLabel"
+          aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark text-white">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <p class="roboto-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt consequuntur sint velit
+                                vel tempore doloremque explicabo ipsa. Quam, porro eligendi earum corporis reiciendis ut
+                                culpa deleniti dolores veritatis id!</p>
+                              <p class="roboto-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium dolorum sint vitae
+                                  aut totam quia dicta necessitatibus? Quasi, reiciendis.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                  </div>
+                  </div>
+              </div>
     <!-- Header -->
     <header class=" container">
     <!-- Navbar -->
-  
-    <nav data-bs-theme="dark" id="navbar" class="navbar fixed-top bg-none navbar navbar-expand-lg ">
+      <nav data-bs-theme="dark" id="navbar" class="navbar fixed-top bg-none navbar navbar-expand-lg ">
         <div class="container-fluid">
             <div class="col-sm-4 col-3 text-center margin-left">
                 <img class="navbar__img" src="assets/img/viajes.svg" alt="">
@@ -275,7 +296,7 @@
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label text-decoration-underline roboto-regular" for="flexCheckDefault" data-bs-toggle="modal"
-                    data-bs-target="#terminosycondiciones">
+                    data-bs-target="#CondicionesModal">
                     Acepto los términos y condiciones.
                 </label>
                 <div>
@@ -285,7 +306,6 @@
             </div>
             </form>
   <!-- RRSS -->
-        
         <div class="col-12 col-md-6 mt-5 pt-5 text-white">
           <div class="mt-5 mb-4">
             <i class="fa-solid fa-phone "></i>
@@ -307,28 +327,6 @@
       </div>
     </div>
   </section>
-      <!-- Modal -->
-        <div class="modal fade" id="CondicionesModal" tabindex="-1" aria-labelledby="ConddicionesModalLabel"
-          aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt consequuntur sint velit
-                                vel tempore doloremque explicabo ipsa. Quam, porro eligendi earum corporis reiciendis ut
-                                culpa deleniti dolores veritatis id!</p>
-                              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium dolorum sint vitae
-                                  aut totam quia dicta necessitatibus? Quasi, reiciendis.</p>
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
-                          </div>
-                  </div>
-                  </div>
-              </div>
     <!-- Bootstrap -->
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
