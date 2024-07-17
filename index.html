@@ -20,13 +20,14 @@
     <!-- Header -->
     <header class=" container">
     <!-- Navbar -->
-    <nav id="navbar" class="navbar fixed-top ">
+  
+    <nav data-bs-theme="dark" id="navbar" class="navbar fixed-top bg-none navbar navbar-expand-lg ">
         <div class="container-fluid">
             <div class="col-sm-4 col-3 text-center margin-left">
                 <img class="navbar__img" src="assets/img/viajes.svg" alt="">
                 <a class="navbar-brand text-white roboto-regular"  href="">Viajes Chile</a> 
             </div>
-            <div class="align-end margin-right p-3 mx-4">
+            <div class="align-end margin-right p-5 mx-5">
             <button
             class="navbar-toggler"
             type="button"
@@ -56,6 +57,11 @@
                 >Destacados</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active text-white align-end roboto" href="#testimonios"
+              >Testimonios</a
+              >
+          </li>
+            <li class="nav-item">
                 <a class="nav-link active text-white align-end roboto" href="#Contacto"
                 >Contacto</a
                 >
@@ -72,7 +78,7 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner rounded-3">
         <div class="carousel-item active">
           <img src="assets/img/carousel1.jpg" class=" d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -108,9 +114,10 @@
     <!-- Quiénes somos -->
     <section id="Quiénessomos" class="Quien ">
       <h3 class="roboto-bold text-center text-white mt-5">QUIÉNES SOMOS</h3>
-      <hr class="border text-white" />
+      
     <div class="container roboto-regular mb-4 text-white">
         <div class="row">
+        <hr class="border text-white" />
         <div class="col-6 col-4 mt-3 col-sm d-none d-sm-block ">
           <img src="assets/img/quienes-somos.jpg" class="rounded w-100 h-100" alt="">
         </div>
@@ -132,7 +139,7 @@
     </section>
     <!-- Card Destacados -->
     <section class="Destacados" id="Destacados">
-    <h3 class="text-center roboto-bold text-white">DESTACADOS</h3>
+    <h3 class="text-center roboto-bold text-white mt-5">DESTACADOS</h3>
     <div class="container">
       <hr class="border">
       <div class="row">
@@ -216,7 +223,7 @@
       </div>
     </section>
     <!-- Testimonios -->
-    <div id="people" class="container">
+    <div id="testimonios" class="container">
       <h3 class="roboto-bold text-center text-white m-3">Testimonios</h3>
       <hr class="border">
       <div class="row ">
@@ -241,7 +248,7 @@
   <section id="Contacto">
     <div class="container text-white mt-5">
       <div class="row">
-        <h3 class="roboto-bold text-center ">Contacto</h3>
+        <h3 class="roboto-bold text-center mt-3">Contacto</h3>
         <hr>
         <div class="col-12 col-md-6">
           <form class="row p-4">
@@ -274,29 +281,8 @@
             <button type="button" class="btn btn-primary mt-3" id="alertBtn">Enviar</button>
             </div>
             </form>
-                <!-- Modal -->
-  <div class="modal fade" id="terminosycondiciones" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body color-black">
-              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt consequuntur sint velit
-                  vel tempore doloremque explicabo ipsa. Quam, porro eligendi earum corporis reiciendis ut
-                  culpa deleniti dolores veritatis id!</p>
-              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium dolorum sint vitae
-                  aut totam quia dicta necessitatibus? Quasi, reiciendis.</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-      </div>
-  </div>
   <!-- RRSS -->
-        </div>
+        
         <div class="col-12 col-md-6 mt-5 pt-5 text-white">
           <div class="mt-5 mb-4">
             <i class="fa-solid fa-phone "></i>
@@ -318,6 +304,28 @@
       </div>
     </div>
   </section>
+      <!-- Modal -->
+        <div class="modal fade" id="CondicionesModal" tabindex="-1" aria-labelledby="ConddicionesModalLabel"
+          aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt consequuntur sint velit
+                                vel tempore doloremque explicabo ipsa. Quam, porro eligendi earum corporis reiciendis ut
+                                culpa deleniti dolores veritatis id!</p>
+                              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, laudantium dolorum sint vitae
+                                  aut totam quia dicta necessitatibus? Quasi, reiciendis.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                  </div>
+                  </div>
+              </div>
     <!-- Bootstrap -->
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

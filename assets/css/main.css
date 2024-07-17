@@ -12044,6 +12044,12 @@ textarea.form-control-lg {
   font-style: italic;
 }
 
+.modal-open main {
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px);
+}
+
 .header {
   background-color: black;
   color: white;
@@ -12055,21 +12061,16 @@ textarea.form-control-lg {
 }
 
 .carousel-item {
-  height: 500px;
+  max-height: 500px;
+  min-height: 300px;
 }
 .carousel-item__img {
   background-size: contain;
   height: 100%;
-  border: rounded;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media screen and (max-height: 500px) {
-  .carousel-item {
-    height: 300px;
-  }
-}
 .navbar {
   color: white;
 }
